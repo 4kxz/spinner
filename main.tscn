@@ -1,0 +1,183 @@
+[gd_scene load_steps=30 format=3 uid="uid://ckqs27drddapt"]
+
+[ext_resource type="Texture2D" uid="uid://un6mau6f2wfo" path="res://kenney_platformer_art_deluxe/Candy/Tiles/lollipopRed.png" id="1_nr01f"]
+[ext_resource type="Script" path="res://addons/rmsmartshape/shapes/shape_closed.gd" id="2_ydhum"]
+[ext_resource type="Script" path="res://addons/rmsmartshape/vertex_properties.gd" id="3_kn0jc"]
+[ext_resource type="Script" path="res://addons/rmsmartshape/shapes/point.gd" id="4_ikaxx"]
+[ext_resource type="Script" path="res://addons/rmsmartshape/shapes/point_array.gd" id="5_a73je"]
+[ext_resource type="Script" path="res://addons/rmsmartshape/materials/edge_material_metadata.gd" id="6_jii68"]
+[ext_resource type="Script" path="res://addons/rmsmartshape/materials/edge_material.gd" id="7_b6w2t"]
+[ext_resource type="Texture2D" uid="uid://qtnltgugsimo" path="res://kenney_platformer_art_deluxe/Ice/Tiles/tundraCenter.png" id="7_dv6c0"]
+[ext_resource type="Script" path="res://addons/rmsmartshape/materials/shape_material.gd" id="7_f8ntv"]
+[ext_resource type="Texture2D" uid="uid://5tt8ylwk3oi4" path="res://kenney_platformer_art_deluxe/Ice/Tiles/tundraMid.png" id="8_l0fms"]
+[ext_resource type="Script" path="res://addons/rmsmartshape/normal_range.gd" id="9_5f672"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_3fl7t"]
+radius = 36.1248
+
+[sub_resource type="Resource" id="Resource_f265l"]
+script = ExtResource("3_kn0jc")
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id="Resource_3k8jr"]
+script = ExtResource("4_ikaxx")
+position = Vector2(-101.407, 480.964)
+point_in = Vector2(0, 0)
+point_out = Vector2(0, 0)
+properties = SubResource("Resource_f265l")
+
+[sub_resource type="Resource" id="Resource_qduhs"]
+script = ExtResource("3_kn0jc")
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id="Resource_6rlvc"]
+script = ExtResource("4_ikaxx")
+position = Vector2(626.755, 579.557)
+point_in = Vector2(-430.007, 10.6908)
+point_out = Vector2(430.007, -10.6908)
+properties = SubResource("Resource_qduhs")
+
+[sub_resource type="Resource" id="Resource_xctko"]
+script = ExtResource("3_kn0jc")
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id="Resource_4dtvm"]
+script = ExtResource("4_ikaxx")
+position = Vector2(1278.89, 464.334)
+point_in = Vector2(0, 0)
+point_out = Vector2(0, 0)
+properties = SubResource("Resource_xctko")
+
+[sub_resource type="Resource" id="Resource_ljlvl"]
+script = ExtResource("3_kn0jc")
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id="Resource_2xpq3"]
+script = ExtResource("4_ikaxx")
+position = Vector2(1419.06, 742.294)
+point_in = Vector2(0, 0)
+point_out = Vector2(0, 0)
+properties = SubResource("Resource_ljlvl")
+
+[sub_resource type="Resource" id="Resource_xl5tf"]
+script = ExtResource("3_kn0jc")
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id="Resource_e2tl3"]
+script = ExtResource("4_ikaxx")
+position = Vector2(-196.759, 727.262)
+point_in = Vector2(0, 0)
+point_out = Vector2(0, 0)
+properties = SubResource("Resource_xl5tf")
+
+[sub_resource type="Resource" id="Resource_nmy4q"]
+script = ExtResource("3_kn0jc")
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id="Resource_25ve1"]
+script = ExtResource("4_ikaxx")
+position = Vector2(-101.407, 480.964)
+point_in = Vector2(0, 0)
+point_out = Vector2(0, 0)
+properties = SubResource("Resource_nmy4q")
+
+[sub_resource type="Resource" id="Resource_3miuk"]
+script = ExtResource("5_a73je")
+_points = {
+0: SubResource("Resource_3k8jr"),
+1: SubResource("Resource_6rlvc"),
+2: SubResource("Resource_4dtvm"),
+3: SubResource("Resource_2xpq3"),
+4: SubResource("Resource_e2tl3"),
+5: SubResource("Resource_25ve1")
+}
+_point_order = PackedInt32Array(0, 1, 2, 3, 4, 5)
+_constraints = {
+Vector2i(0, 5): 15
+}
+_next_key = 7
+_material_overrides = {}
+tessellation_stages = 3
+tessellation_tolerance = 6.0
+curve_bake_interval = 20.0
+
+[sub_resource type="Resource" id="Resource_bmx3c"]
+script = ExtResource("7_b6w2t")
+textures = Array[Texture2D]([ExtResource("8_l0fms")])
+textures_corner_outer = Array[Texture2D]([])
+textures_corner_inner = Array[Texture2D]([])
+textures_taper_left = Array[Texture2D]([])
+textures_taper_right = Array[Texture2D]([])
+textures_taper_corner_left = Array[Texture2D]([])
+textures_taper_corner_right = Array[Texture2D]([])
+randomize_texture = false
+use_corner_texture = false
+use_taper_texture = true
+fit_mode = 0
+
+[sub_resource type="Resource" id="Resource_v2iex"]
+script = ExtResource("9_5f672")
+begin = 45.0
+distance = 90.0
+edgeRendering = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_y2xoh"]
+script = ExtResource("6_jii68")
+edge_material = SubResource("Resource_bmx3c")
+normal_range = SubResource("Resource_v2iex")
+weld = true
+taper_sharp_corners = true
+render = true
+z_index = 0
+z_as_relative = true
+offset = 0.0
+
+[sub_resource type="Resource" id="Resource_4ej44"]
+script = ExtResource("7_f8ntv")
+_edge_meta_materials = Array[ExtResource("6_jii68")]([SubResource("Resource_y2xoh")])
+fill_textures = Array[Texture2D]([ExtResource("7_dv6c0")])
+fill_texture_z_index = -10
+fill_texture_show_behind_parent = false
+fill_texture_scale = 1.0
+fill_texture_absolute_position = false
+fill_texture_absolute_rotation = false
+fill_texture_offset = Vector2(0, 0)
+fill_texture_angle_offset = 0.0
+fill_mesh_offset = 0.0
+render_offset = -1.0
+
+[node name="Main" type="Node2D"]
+
+[node name="Spinner" type="RigidBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Spinner"]
+shape = SubResource("CircleShape2D_3fl7t")
+
+[node name="Sprite2D" type="Sprite2D" parent="Spinner"]
+texture = ExtResource("1_nr01f")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="Ground1" type="Node2D" parent="StaticBody2D"]
+texture_repeat = 2
+script = ExtResource("2_ydhum")
+_points = SubResource("Resource_3miuk")
+shape_material = SubResource("Resource_4ej44")
+collision_polygon_node_path = NodePath("../CollisionPolygon2D")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+visible = false
+modulate = Color(1, 1, 1, 0.3)
+polygon = PackedVector2Array(-101.407, 480.964, 101.421, 534.269, 331.57, 568.662, 626.755, 579.557, 910.061, 557.043, 1114.08, 517.936, 1278.89, 464.334, 1419.06, 742.294, -196.759, 727.262, -101.407, 480.964)
